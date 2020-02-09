@@ -16,7 +16,9 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "start": "npm run dev",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -24,7 +26,6 @@
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
-    "babel-plugin-styled-components": "^1.10.7",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.10",
     "gatsby-image": "^2.2.39",
@@ -45,6 +46,12 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/addon-actions": "^5.3.12",
+    "@storybook/addon-knobs": "^5.3.12",
+    "@storybook/addon-links": "^5.3.12",
+    "@storybook/addons": "^5.3.12",
+    "@storybook/react": "^5.3.12",
     "@types/classnames": "^2.2.9",
     "@types/node": "^13.5.3",
     "@types/react": "16.8.8",
@@ -52,6 +59,9 @@
     "@types/react-helmet": "^5.0.15",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
     "@typescript-eslint/parser": "^2.18.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-preset-react-app": "^9.1.1",
     "eslint": "^6.8.0",
     "eslint-config-blvd": "^1.0.2",
     "eslint-config-prettier": "^6.10.0",

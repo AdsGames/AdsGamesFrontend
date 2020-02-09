@@ -1,32 +1,32 @@
-import { transparentize } from 'polished'
-import { Link } from 'gatsby'
-import styled from '@emotion/styled'
+import { transparentize } from "polished";
+import { Link } from "gatsby";
+import styled from "@emotion/styled";
 
-import Container from '../Container'
-import { heights, dimensions, colors } from '../../styles/variables'
+import Container from "../Container";
+import { heights, dimensions, colors } from "../../styles/variables";
 
-import LogoShadowed from '../../images/logo-shadow.svg'
+import logoShadow from "../../images/logo-shadow.svg";
 
 export const StyledHeader = styled.header`
   height: ${heights.header}px;
   padding: 0 ${dimensions.containerPadding}rem;
   background-color: ${colors.brand};
   color: ${transparentize(0.5, colors.white)};
-`
+`;
 
 export const Logo = styled.div`
-  background: url(${LogoShadowed});
+  background: url(${logoShadow});
   background-size: 100% 100%;
   height: 80px;
   width: 380px;
-`
+`;
 
 export const HeaderInner = styled(Container)`
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100%;
-`
+`;
 
 export const HomepageLink = styled(Link)`
   color: ${colors.white};
@@ -37,4 +37,4 @@ export const HomepageLink = styled(Link)`
   &:focus {
     text-decoration: none;
   }
-`
+`;

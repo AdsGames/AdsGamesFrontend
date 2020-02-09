@@ -1,10 +1,12 @@
-import { darken } from 'polished'
-import styled from '@emotion/styled'
+import { darken } from "polished";
+import styled from "@emotion/styled";
 
-import { colors, dimensions } from '../../styles/variables'
+import { colors, dimensions } from "../../../styles/variables";
 
 export const StyledButton = styled.button`
   min-height: 30px;
+  min-width: 30px;
+
   background-color: ${colors.ui.input};
   text-align: center;
   font-weight: 600;
@@ -31,4 +33,4 @@ export const StyledButton = styled.button`
     border-top: 3px solid ${darken(0.4, colors.ui.input)};
     box-shadow: inset 0 1px 8px -1px ${colors.boxShadow};
   }
-`
+`;

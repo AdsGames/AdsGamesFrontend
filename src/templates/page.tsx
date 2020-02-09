@@ -1,23 +1,23 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import * as React from "react";
+import { graphql } from "gatsby";
 
-import Page from '../components/Page'
-import Container from '../components/Container'
-import IndexLayout from '../layouts'
+import Page from "../components/Page";
+import Container from "../components/Container";
+import IndexLayout from "../layouts";
 
 interface PageTemplateProps {
   data: {
     site: {
       siteMetadata: {
-        title: string
-        description: string
+        title: string;
+        description: string;
         author: {
-          name: string
-          url: string
-        }
-      }
-    }
-  }
+          name: string;
+          url: string;
+        };
+      };
+    };
+  };
 }
 
 const PageTemplate: React.FC<PageTemplateProps> = () => (
@@ -26,9 +26,9 @@ const PageTemplate: React.FC<PageTemplateProps> = () => (
       <Container />
     </Page>
   </IndexLayout>
-)
+);
 
-export default PageTemplate
+export default PageTemplate;
 
 export const query = graphql`
   query PageTemplateQuery {
@@ -43,4 +43,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
