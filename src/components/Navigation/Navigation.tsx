@@ -17,7 +17,7 @@ export const navLinks: NavButtonProps[] = [
   { text: "About", icon: ICONS.about, hoverIcon: ICONS.aboutHover, route: ROUTES.about },
 ];
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
   return (
     <NavContainer>
       {navLinks.map(link => (

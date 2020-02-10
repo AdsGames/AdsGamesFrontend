@@ -2,14 +2,16 @@ import React, { ReactNode } from "react";
 
 import { StyledCard, CardTitle, CardContent, CardTitleContainer } from "./Card.style";
 
-const Header: React.SFC<{ title: string; children: ReactNode }> = ({ title = "cats", children = "cats" }) => {
+const Card: React.FC<{ title?: string; children: ReactNode }> = ({ title, children }) => {
   return (
     <StyledCard>
-      <CardTitleContainer>
-        <CardTitle>{title}</CardTitle>
-      </CardTitleContainer>
+      {title && (
+        <CardTitleContainer>
+          <CardTitle>{title}</CardTitle>
+        </CardTitleContainer>
+      )}
       <CardContent>{children}</CardContent>
     </StyledCard>
   );
 };
-export default Header;
+export default Card;

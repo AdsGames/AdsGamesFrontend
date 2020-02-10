@@ -10,11 +10,9 @@ const StyledLayoutRoot = styled.div`
   background-color: #111111;
 `;
 
-interface LayoutRootProps {
+const LayoutRoot: React.FC<{
   className?: string;
-}
-
-const LayoutRoot: React.FC<LayoutRootProps> = ({ children, className }) => (
+}> = ({ children, className }) => (
   <>
     <Global styles={() => css(normalize)} />
     <StyledLayoutRoot className={className}>{children}</StyledLayoutRoot>

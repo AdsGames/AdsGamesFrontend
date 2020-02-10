@@ -4,13 +4,14 @@ import Navigation from "../Navigation";
 
 import { StyledHeader, HeaderInner, HomepageLink, Logo } from "./Header.style";
 
-const Header: React.FC<{ title: string }> = ({ title }) => {
+const Header = () => {
   return (
     <StyledHeader>
       <Navigation />
       <HeaderInner>
-        <Logo />
-        <HomepageLink to="/">{title}</HomepageLink>
+        <HomepageLink to="/">
+          <Logo />
+        </HomepageLink>
       </HeaderInner>
     </StyledHeader>
   );
