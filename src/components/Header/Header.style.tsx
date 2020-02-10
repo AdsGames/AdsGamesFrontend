@@ -19,7 +19,6 @@ export const Logo = styled.div`
   background-size: 100% 100%;
   height: 80px;
   width: 380px;
-  image-rendering: optimizeSpeed;
 `;
 
 export const HeaderInner = styled(Container)`

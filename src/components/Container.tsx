@@ -16,7 +16,7 @@ interface ContainerProps {
   className?: string;
 }
 
-const Container: React.SFC<ContainerProps> = ({ children, className }) => (
+const Container: React.FC<ContainerProps> = ({ children, className }) => (
   <StyledContainer className={className}>{children}</StyledContainer>
 );
 
