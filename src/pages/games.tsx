@@ -14,7 +14,7 @@ const GamesPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <ContentHeader text="Games" />
+        <ContentHeader text="Games" sticky />
 
         <Card title="Online">
           <GameGrid>
