@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { Link } from "gatsby";
 
-export const NavButtonStyle = styled.div`
+export const NavButtonStyle = styled(Link)`
   height: 100%;
   width: 70px;
   cursor: pointer;
