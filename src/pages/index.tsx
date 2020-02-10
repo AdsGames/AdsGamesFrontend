@@ -1,9 +1,8 @@
-import * as React from "react";
-import { Link } from "gatsby";
+import React from "react";
 
 import Page from "../components/Page";
 import Container from "../components/Container";
-import Button from "../components/Inputs/Button";
+import Card from "../components/Card";
 
 import IndexLayout from "../layouts";
 
@@ -11,11 +10,10 @@ const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link>
-        <Button>Login Here Pls!</Button>
+        <Card title="Featured Games">
+          <h1>Content here</h1>
+          <p>asdl jkfhajs khdflkj ashdf kjahs dfjkdasf</p>
+        </Card>
       </Container>
     </Page>
   </IndexLayout>
