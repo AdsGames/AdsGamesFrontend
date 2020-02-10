@@ -18,12 +18,6 @@ Future frontend for A.D.S. Games website
     yarn global add gatsby-cli
     ```
 
-    Use the `gatsby-cli` to create a new site and install its dependencies.
-
-    ```bash
-    gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
-    ```
-
 2.  **Start developing.**
 
     Move to project's directory.
