@@ -7,13 +7,12 @@ const StyledLayoutRoot = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #111111;
 `;
 
-interface LayoutRootProps {
+const LayoutRoot: React.FC<{
   className?: string;
-}
-
-const LayoutRoot: React.FC<LayoutRootProps> = ({ children, className }) => (
+}> = ({ children, className }) => (
   <>
     <Global styles={() => css(normalize)} />
     <StyledLayoutRoot className={className}>{children}</StyledLayoutRoot>
