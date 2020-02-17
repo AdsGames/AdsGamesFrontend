@@ -3,15 +3,14 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 
 import Container from "../Container";
-import { heights, dimensions, colors } from "../../styles/variables";
 
 import logoShadow from "../../images/logo-shadow.svg";
 
 export const StyledHeader = styled.header`
-  height: ${heights.header}px;
-  padding: 0 ${dimensions.containerPadding}rem;
-  background-color: ${colors.brand};
-  color: ${transparentize(0.5, colors.white)};
+  height: ${props => props.theme.heights.header}px;
+  padding: 0 ${props => props.theme.dimensions.containerPadding}rem;
+  background-color: ${props => props.theme.colors.brand};
+  color: ${transparentize(0.5, "#FFFFFF")};
 `;
 
 export const Logo = styled.div`
@@ -30,7 +29,7 @@ export const HeaderInner = styled(Container)`
 `;
 
 export const HomepageLink = styled(Link)`
-  color: ${colors.white};
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
 

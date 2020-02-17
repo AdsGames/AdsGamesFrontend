@@ -1,5 +1,7 @@
-import { dimensions, fonts, colors, breakpoints } from "./variables";
+import { defaultTheme } from "./theme";
 import { getEmSize } from "./mixins";
+
+const { dimensions, fonts, colors, breakpoints } = defaultTheme;
 
 export default `
   html {

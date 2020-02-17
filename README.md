@@ -11,10 +11,6 @@ Future frontend for A.D.S. Games website
     Install `gatsby-cli` package globally on your machine.
 
     ```bash
-    # using NPM
-    npm install -g gatsby-cli
-
-    # using YARN
     yarn global add gatsby-cli
     ```
 
@@ -29,10 +25,6 @@ Future frontend for A.D.S. Games website
     Start your site.
 
     ```bash
-    # using npm
-    npm start
-
-    # using yarn
     yarn start
     ```
 
@@ -43,10 +35,6 @@ Future frontend for A.D.S. Games website
     Once you're finished, you can make production build of your app using:
 
     ```bash
-    # using npm
-    npm run build
-
-    # using yarn
     yarn build
     ```
 
@@ -55,10 +43,6 @@ Future frontend for A.D.S. Games website
     After building your application in step 3, you're ready to publish your app and go online!
 
     ```bash
-    # using npm
-    npm run deploy
-
-    # using yarn
     yarn deploy
     ```
 
