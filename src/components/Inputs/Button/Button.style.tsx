@@ -1,9 +1,9 @@
 import { darken } from "polished";
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 import { colors, dimensions } from "../../../styles/variables";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled("button")`
   min-height: 30px;
   min-width: 30px;
 

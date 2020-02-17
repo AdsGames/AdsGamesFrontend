@@ -2,8 +2,6 @@ interface CSSModule {
   [className: string]: string;
 }
 
-// type shims for CSS modules
-
 declare module "*.module.scss" {
   const cssModule: CSSModule;
   export = cssModule;
@@ -14,9 +12,12 @@ declare module "*.module.css" {
   export = cssModule;
 }
 
-declare module "*.svg";
+declare module "*.svg" {
+  const module: string;
+  export default module;
+}
 
 declare module "*.png" {
-  const pngModule: string;
-  export default pngModule;
+  const module: string;
+  export default module;
 }

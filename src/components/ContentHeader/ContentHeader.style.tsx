@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const StyledContentHeader = styled.h1<{ sticky: boolean }>`
   background-color: #f77d11;
