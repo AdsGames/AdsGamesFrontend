@@ -41,12 +41,6 @@ export const breakpoints = {
   xl: 1200,
 };
 
-export const widths = {
-  md: 720,
-  lg: 960,
-  xl: 1140,
-};
-
 export const dimensions = {
   fontSize: {
     regular: 16,

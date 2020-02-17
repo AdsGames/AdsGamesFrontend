@@ -3,5 +3,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./src/theme.ts";
 
-// You can delete this file if you're not using it
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider theme={defaultTheme}>{element}</ThemeProvider>;
+};
