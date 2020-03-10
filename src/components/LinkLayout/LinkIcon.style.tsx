@@ -6,6 +6,6 @@ export const LinkImage = styled.img`
 `;
 
 export const StyledLinkIcon = styled.div`
-  position: relative;
-  flex-shrink: 0;
+  max-width: 128px;
+  max-height: 128px;
 `;
