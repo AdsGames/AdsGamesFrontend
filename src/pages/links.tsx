@@ -6,13 +6,29 @@ import ContentHeader from "../components/ContentHeader";
 import Card from "../components/Card";
 
 import IndexLayout from "../layouts";
-import { LinkIcon } from "../components/LinkLayout";
-import { LinkLayout } from "../components/LinkLayout";
+import { LinkIcon, LinkLayout } from "../components/LinkLayout";
 
 // Pls I know no other way
 import githubIcon from "../images/link_icons/github.png";
 import audacityIcon from "../images/link_icons/audacity.png";
 import codeblocksIcon from "../images/link_icons/codeblocks.png";
+
+const links = [
+  {
+    title: "GitHub",
+    text: "Check out the source code to our games, and other programs!",
+    extLinks: [
+      {
+        text: "Allan's Github",
+        location: "https://github.com/alegemaate",
+      },
+      {
+        text: "Danny's Github",
+        location: "https://github.com/danwardvs",
+      },
+    ],
+  },
+];
 
 const LinksPage = () => (
   <IndexLayout>
@@ -21,22 +37,27 @@ const LinksPage = () => (
         <ContentHeader text="Useful Links" />
       </Container>
 
-      <Container>
-        <Card title="GitHub">
-          <LinkLayout>
-            <Container>
-              <h4> Check out the source code to our games, and other programs!</h4>
-              <p>
-                <a href="https://github.com/alegemaate">Allan's Github</a>
-                <br></br>
-                <a href="https://github.com/danwardvs">Danny's Github</a>
-              </p>
-            </Container>
+      {links.map(({ title, text, extLinks }) => (
+        <Container>
+          <Card title={title}>
+            <LinkLayout>
+              <Container>
+                <p>{text}</p>
+                {extLinks.map(link => (
+                  <>
+                    <a href={link.location} target="_blank" rel="noopener noreferrer">
+                      {link.text}
+                    </a>
+                    <br />
+                  </>
+                ))}
+              </Container>
 
-            <LinkIcon title="Github" image={githubIcon} />
-          </LinkLayout>
-        </Card>
-      </Container>
+              <LinkIcon color="#000" title="Github" image={githubIcon} />
+            </LinkLayout>
+          </Card>
+        </Container>
+      ))}
 
       <Container>
         <Card title="Audacity">
@@ -45,14 +66,14 @@ const LinksPage = () => (
               <p>
                 A powerful audio software tool useful for recording, editing, and generating sounds and music. It features multi-track
                 recording, and tons of effects. You need this if you are adding your own music or sounds to your games.
-                <br></br>
+                <br />
                 <a href="https://www.audacityteam.org/" target="_blank">
                   Get it here!
                 </a>
               </p>
             </Container>
 
-            <LinkIcon title="Audacity" image={audacityIcon} />
+            <LinkIcon color="#000" title="Audacity" image={audacityIcon} />
           </LinkLayout>
         </Card>
       </Container>
@@ -64,14 +85,14 @@ const LinksPage = () => (
               <p>
                 A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great place to start for those looking to
                 get into C or C++ development!
-                <br></br>
+                <br />
                 <a href="http://codeblocks.org/" target="_blank">
                   Get it here!
                 </a>
               </p>
             </Container>
 
-            <LinkIcon title="Code::Blocks" image={codeblocksIcon} />
+            <LinkIcon color="#000" title="Code::Blocks" image={codeblocksIcon} />
           </LinkLayout>
         </Card>
       </Container>

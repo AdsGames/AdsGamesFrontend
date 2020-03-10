@@ -1,18 +1,18 @@
 import React from "react";
 
-import { LinkImage } from "./LinkIcon.style";
-import { StyledLinkIcon } from "./LinkIcon.style";
+import { StyledLinkIcon, LinkIconContainer } from "./LinkIcon.style";
 
 export interface GameCardProps {
   title: string;
   image: string;
+  color: string;
 }
 
-const LinkIcon: React.FC<GameCardProps> = ({ title, image }) => {
+const LinkIcon: React.FC<GameCardProps> = ({ title, image, color }) => {
   return (
-    <StyledLinkIcon>
-      <LinkImage width="256" height="256" src={image} alt={title} />
-    </StyledLinkIcon>
+    <LinkIconContainer color={color}>
+      <StyledLinkIcon width="256" height="256" src={image} alt={title} />
+    </LinkIconContainer>
   );
 };
 
