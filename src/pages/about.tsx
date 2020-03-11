@@ -53,7 +53,7 @@ const AboutPage = () => (
           <Card title={title}>
             <LinkLayout>
               <LinkDescription>{text}</LinkDescription>
-              <LinkIcon color={iconBgColor} title={title} image={image} height={160} />
+              <LinkIcon color={iconBgColor} title={title} image={image} width={160} />
             </LinkLayout>
           </Card>
         </Container>

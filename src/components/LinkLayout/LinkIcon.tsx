@@ -6,13 +6,13 @@ export interface GameCardProps {
   title: string;
   image: string;
   color: string;
-  height: number;
+  width?: number;
 }
 
-const LinkIcon: React.FC<GameCardProps> = ({ title, image, color, height }) => {
+const LinkIcon: React.FC<GameCardProps> = ({ title, image, color, width }) => {
   return (
-    <LinkIconContainer color={color}>
-      <StyledLinkIcon src={image} alt={title} height={height} />
+    <LinkIconContainer color={color} width={width}>
+      <StyledLinkIcon src={image} alt={title} />
     </LinkIconContainer>
   );
 };
