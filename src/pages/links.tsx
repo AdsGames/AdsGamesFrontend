@@ -6,7 +6,7 @@ import ContentHeader from "../components/ContentHeader";
 import Card from "../components/Card";
 
 import IndexLayout from "../layouts";
-import { LinkIcon, LinkLayout } from "../components/LinkLayout";
+import { LinkIcon, LinkLayout, LinkDescription } from "../components/LinkLayout";
 
 // Pls I know no other way
 import githubIcon from "../images/link_icons/github.png";
@@ -67,18 +67,17 @@ const LinksPage = () => (
         <Container>
           <Card title={title}>
             <LinkLayout>
-              <Container>
-                <p>{text}</p>
+              <LinkDescription>
+                {text}
                 {extLinks.map(link => (
                   <>
+                    <br />
                     <a href={link.location} target="_blank" rel="noopener noreferrer">
                       {link.text}
                     </a>
-                    <br />
                   </>
                 ))}
-              </Container>
-
+              </LinkDescription>
               <LinkIcon color={iconBgColor} title={title} image={image} />
             </LinkLayout>
           </Card>
