@@ -32,24 +32,28 @@ const links = [
   },
   {
     title: "Audacity",
-    text: "A powerful audio software tool useful for recording, editing, blah blah",
+    text:
+      // eslint-disable-next-line max-len
+      "A powerful audio software tool useful for recording, editing, and generating sounds and music. It features multi-track recording, and tons of effects. You need this if you are adding your own music or sounds to your games.",
     image: audacityIcon,
     iconBgColor: "#2980B9",
     extLinks: [
       {
-        text: "Get it now!",
+        text: "Download it here!",
         location: "https://www.audacityteam.org/",
       },
     ],
   },
   {
     title: "Code::Blocks",
-    text: "A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great pooking to get into C or C++ development!",
+    text:
+      // eslint-disable-next-line max-len
+      "A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great place to start for those looking to get into C or C++ development!",
     image: codeblocksIcon,
     iconBgColor: "#EBEFF0",
     extLinks: [
       {
-        text: "Get it now!",
+        text: "Download it here!",
         location: "http://codeblocks.org/",
       },
     ],
@@ -78,7 +82,7 @@ const LinksPage = () => (
                   </>
                 ))}
               </LinkDescription>
-              <LinkIcon color={iconBgColor} title={title} image={image} />
+              <LinkIcon color={iconBgColor} title={title} image={image} width={192} height={192} />
             </LinkLayout>
           </Card>
         </Container>
