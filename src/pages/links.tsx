@@ -17,6 +17,8 @@ const links = [
   {
     title: "GitHub",
     text: "Check out the source code to our games, and other programs!",
+    image: githubIcon,
+    iconBgColor: "#34495E",
     extLinks: [
       {
         text: "Allan's Github",
@@ -25,6 +27,30 @@ const links = [
       {
         text: "Danny's Github",
         location: "https://github.com/danwardvs",
+      },
+    ],
+  },
+  {
+    title: "Audacity",
+    text: "A powerful audio software tool useful for recording, editing, blah blah",
+    image: audacityIcon,
+    iconBgColor: "#2980B9",
+    extLinks: [
+      {
+        text: "Get it now!",
+        location: "https://www.audacityteam.org/",
+      },
+    ],
+  },
+  {
+    title: "Code::Blocks",
+    text: "A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great pooking to get into C or C++ development!",
+    image: codeblocksIcon,
+    iconBgColor: "#EBEFF0",
+    extLinks: [
+      {
+        text: "Get it now!",
+        location: "http://codeblocks.org/",
       },
     ],
   },
@@ -37,7 +63,7 @@ const LinksPage = () => (
         <ContentHeader text="Useful Links" />
       </Container>
 
-      {links.map(({ title, text, extLinks }) => (
+      {links.map(({ title, text, extLinks, image, iconBgColor }) => (
         <Container>
           <Card title={title}>
             <LinkLayout>
@@ -53,49 +79,11 @@ const LinksPage = () => (
                 ))}
               </Container>
 
-              <LinkIcon color="#000" title="Github" image={githubIcon} />
+              <LinkIcon color={iconBgColor} title={title} image={image} />
             </LinkLayout>
           </Card>
         </Container>
       ))}
-
-      <Container>
-        <Card title="Audacity">
-          <LinkLayout>
-            <Container>
-              <p>
-                A powerful audio software tool useful for recording, editing, and generating sounds and music. It features multi-track
-                recording, and tons of effects. You need this if you are adding your own music or sounds to your games.
-                <br />
-                <a href="https://www.audacityteam.org/" target="_blank">
-                  Get it here!
-                </a>
-              </p>
-            </Container>
-
-            <LinkIcon color="#000" title="Audacity" image={audacityIcon} />
-          </LinkLayout>
-        </Card>
-      </Container>
-
-      <Container>
-        <Card title="Code::Blocks">
-          <LinkLayout>
-            <Container>
-              <p>
-                A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great place to start for those looking to
-                get into C or C++ development!
-                <br />
-                <a href="http://codeblocks.org/" target="_blank">
-                  Get it here!
-                </a>
-              </p>
-            </Container>
-
-            <LinkIcon color="#000" title="Code::Blocks" image={codeblocksIcon} />
-          </LinkLayout>
-        </Card>
-      </Container>
     </Page>
   </IndexLayout>
 );
