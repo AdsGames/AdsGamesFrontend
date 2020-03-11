@@ -82,7 +82,7 @@ const LinksPage = () => (
                   </>
                 ))}
               </LinkDescription>
-              <LinkIcon color={iconBgColor} title={title} image={image} width={192} height={192} />
+              <LinkIcon color={iconBgColor} title={title} image={image} height={192} />
             </LinkLayout>
           </Card>
         </Container>

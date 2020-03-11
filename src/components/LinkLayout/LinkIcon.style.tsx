@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const LinkIconContainer = styled.div`
   height: 100%;
-  max-width: ${props => props.width};
-  min-width: ${props => props.width};
+  max-width: 192px;
+  min-width: 192px;
   background-color: ${props => props.color};
 `;
 
