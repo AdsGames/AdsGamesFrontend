@@ -8,6 +8,7 @@ export const LinkIconContainer = styled.div<{
   max-width: ${props => (props.width ? `{props.width}px` : "auto")};
   min-width: ${props => (props.width ? `{props.width}px` : "auto")};
   background-color: ${props => props.color};
+  padding-right: 1px;
 `;
 
 export const StyledLinkIcon = styled.img`

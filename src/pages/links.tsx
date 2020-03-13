@@ -6,6 +6,7 @@ import ContentHeader from "../components/ContentHeader";
 import Card from "../components/Card";
 
 import IndexLayout from "../layouts";
+import Button from "../components/Inputs/Button";
 import { LinkIcon, LinkLayout, LinkDescription } from "../components/LinkLayout";
 
 // Pls I know no other way
@@ -73,13 +74,9 @@ const LinksPage = () => (
             <LinkLayout>
               <LinkDescription>
                 {text}
+                <br />
                 {extLinks.map(link => (
-                  <>
-                    <br />
-                    <a href={link.location} target="_blank" rel="noopener noreferrer">
-                      {link.text}
-                    </a>
-                  </>
+                  <Button>{link.text}</Button>
                 ))}
               </LinkDescription>
               <LinkIcon color={iconBgColor} title={title} image={image} />
