@@ -12,9 +12,9 @@ export const StyledLinkDescription = styled.div`
 
 export const LinkText = styled.p`
   color: black;
-  text-align: center;
+  text-align: left;
   vertical-align: text-top;
   font-size: 24px;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
 `;

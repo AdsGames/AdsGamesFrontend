@@ -44,4 +44,5 @@ export const ButtonText = styled.p`
 
 export const StyledButtonContainer = styled.div`
   padding: 5px;
+  text-align: center;
 `;
