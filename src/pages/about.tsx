@@ -6,6 +6,8 @@ import Card from "../components/Card";
 import LinkDescription from "../components/LinkLayout/LinkDescription";
 import LinkLayout from "../components/LinkLayout/LinkLayout";
 import LinkIcon from "../components/LinkLayout/LinkIcon";
+import { LinkTag } from "../components/LinkLayout";
+import LinkTagLayout from "../components/LinkLayout/LinkTagLayout";
 
 import ContentHeader from "../components/ContentHeader";
 
@@ -21,6 +23,7 @@ const staff = [
       "Daniel Van Stemp (a.k.a. Danward or Danny) is a programmer and an artist. He has the ability to communicate with his chickens, and once 3D modelled a cube.",
     image: dannyIcon,
     iconBgColor: "#7700ff",
+    tags: ["Code", "Design", "Social Media"],
   },
   {
     title: "Allan",
@@ -29,6 +32,7 @@ const staff = [
       "Allan Legemaate is the lead programmer, and makes music, this site and game engines, and codes in 12 languages. He also has the ability to spawn random animals in real life.",
     image: allanIcon,
     iconBgColor: "red",
+    tags: ["Code", "Music", "Web Design"],
   },
 ];
 const AboutPage = () => (
@@ -48,11 +52,18 @@ const AboutPage = () => (
           <ContentHeader text="Staff" />
         </Card>
       </Container>
-      {staff.map(({ title, text, image, iconBgColor }) => (
+      {staff.map(({ title, text, image, tags, iconBgColor }) => (
         <Container>
           <Card title={title}>
             <LinkLayout>
-              <LinkDescription>{text}</LinkDescription>
+              <LinkDescription>
+                <LinkTagLayout>
+                  {tags.map(tag => (
+                    <LinkTag>{tag}</LinkTag>
+                  ))}
+                </LinkTagLayout>
+                {text}
+              </LinkDescription>
               <LinkIcon color={iconBgColor} title={title} image={image} width={160} />
             </LinkLayout>
           </Card>
