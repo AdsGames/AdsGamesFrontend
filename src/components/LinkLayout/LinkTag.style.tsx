@@ -8,7 +8,7 @@ export const StyledLinkTag = styled.p`
   color: #ffffff;
   font-size: 18px;
   border-radius: 3px;
-  padding: 2px;
+  padding: 1px;
   margin-right: 2%;
   margin-bottom: 5px;
   box-sizing: border-box;

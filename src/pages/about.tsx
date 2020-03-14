@@ -12,8 +12,8 @@ import LinkTagLayout from "../components/LinkLayout/LinkTagLayout";
 import ContentHeader from "../components/ContentHeader";
 
 import IndexLayout from "../layouts";
-import dannyIcon from "../images/about_icons/danny.png";
-import allanIcon from "../images/about_icons/allan.png";
+
+import * as ICONS from "../images/about_icons";
 
 const staff = [
   {
@@ -21,7 +21,7 @@ const staff = [
     text:
       // eslint-disable-next-line max-len
       "Daniel Van Stemp (a.k.a. Danward or Danny) is a programmer and an artist. He has the ability to communicate with his chickens, and once 3D modelled a cube.",
-    image: dannyIcon,
+    image: ICONS.danny,
     iconBgColor: "#7700ff",
     tags: ["Code", "Design", "Social Media"],
   },
@@ -30,9 +30,30 @@ const staff = [
     text:
       // eslint-disable-next-line max-len
       "Allan Legemaate is the lead programmer, and makes music, this site and game engines, and codes in 12 languages. He also has the ability to spawn random animals in real life.",
-    image: allanIcon,
+    image: ICONS.allan,
     iconBgColor: "red",
     tags: ["Code", "Music", "Web Design"],
+  },
+  {
+    title: "Sully",
+    text: "Sullivan Stobo (Sully), is a game developer. He has a rockin' beard and may or may not wear a fedora.",
+    image: ICONS.sully,
+    iconBgColor: "#267F00",
+    tags: ["Code", "Art", "Music"],
+  },
+  {
+    title: "Ryan",
+    text: "Ryan Van Stemp (Ryanthalais), he is 4 feet tall and lives in a cave.",
+    image: ICONS.ryan,
+    iconBgColor: "#002BF9",
+    tags: ["3D Modeling"],
+  },
+  {
+    title: "Miriam",
+    text: "Miriam Legemaate makes art and pixel art for our games. She is rumoured to turn into a cat on full moons, but we have no proof.",
+    image: ICONS.miriam,
+    iconBgColor: "#007F0E",
+    tags: ["Art"],
   },
 ];
 const AboutPage = () => (
