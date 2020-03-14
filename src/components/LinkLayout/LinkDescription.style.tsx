@@ -16,5 +16,5 @@ export const LinkText = styled.p`
   vertical-align: text-top;
   font-size: 24px;
   margin: 0;
-  padding: 10px;
+  padding: 12px;
 `;
