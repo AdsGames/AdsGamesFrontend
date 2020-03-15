@@ -18,18 +18,16 @@ import * as ICONS from "../images/about_icons";
 const staff = [
   {
     title: "Danny",
-    text:
-      // eslint-disable-next-line max-len
-      "Daniel Van Stemp (a.k.a. Danward or Danny) is a programmer and an artist. He has the ability to communicate with his chickens, and once 3D modelled a cube.",
+    text: `Daniel Van Stemp (a.k.a. Danward or Danny) is a programmer and an artist.
+       He has the ability to communicate with his chickens, and once 3D modelled a cube.`,
     image: ICONS.danny,
     iconBgColor: "#7700ff",
     tags: ["Code", "Design", "Social Media"],
   },
   {
     title: "Allan",
-    text:
-      // eslint-disable-next-line max-len
-      "Allan Legemaate is the lead programmer, and makes music, this site and game engines, and codes in 12 languages. He also has the ability to spawn random animals in real life.",
+    text: `Allan Legemaate is the lead programmer, and makes music, this site and game engines, 
+      and codes in 12 languages. He also has the ability to spawn random animals in real life.`,
     image: ICONS.allan,
     iconBgColor: "red",
     tags: ["Code", "Music", "Web Design"],
@@ -56,6 +54,7 @@ const staff = [
     tags: ["Art"],
   },
 ];
+
 const AboutPage = () => (
   <IndexLayout>
     <Page>

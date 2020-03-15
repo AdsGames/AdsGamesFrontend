@@ -33,9 +33,8 @@ const links = [
   },
   {
     title: "Audacity",
-    text:
-      // eslint-disable-next-line max-len
-      "A powerful audio software tool useful for recording, editing, and generating sounds and music. It features multi-track recording, and tons of effects. You need this if you are adding your own music or sounds to your games.",
+    text: `A powerful audio software tool useful for recording, editing, and generating sounds and music. 
+    It features multi-track recording, and tons of effects. You need this if you are adding your own music or sounds to your games.`,
     image: LINK_ICONS.audacity,
     iconBgColor: "#2980B9",
     extLinks: [
@@ -47,9 +46,8 @@ const links = [
   },
   {
     title: "Code::Blocks",
-    text:
-      // eslint-disable-next-line max-len
-      "A free, open source C and C++ IDE. We use it to develop all of our C++ Games. A great place to start for those looking to get into C or C++ development!",
+    text: `A free, open source C and C++ IDE. We use it to develop all of our C++ Games. 
+    A great place to start for those looking to get into C or C++ development!`,
     image: LINK_ICONS.codeblocks,
     iconBgColor: "#EBEFF0",
     extLinks: [
@@ -73,9 +71,8 @@ const links = [
   },
   {
     title: "Notepad++",
-    text:
-      // eslint-disable-next-line max-len
-      "Notepad++ is a free, open source text editor that supports syntax highlighting for several languages. There is a large plugin base so you can customize it however you want. It is a must have for programmers.",
+    text: `Notepad++ is a free, open source text editor that supports syntax highlighting for several languages. 
+    There is a large plugin base so you can customize it however you want. It is a must have for programmers.`,
     image: LINK_ICONS.notepadpp,
     iconBgColor: "#27AE60",
     extLinks: [
@@ -87,9 +84,8 @@ const links = [
   },
   {
     title: "Paint.NET",
-    text:
-      // eslint-disable-next-line max-len
-      "Paint.NET brings MS Paint to a new level with all new features. This program is a must for beginner and intermediate graphic designers who don't want to pay for expensive editing software. Best of all its free!",
+    text: `Paint.NET brings MS Paint to a new level with all new features. This program is a must for beginner and 
+    intermediate graphic designers who don't want to pay for expensive editing software. Best of all its free!`,
     image: LINK_ICONS.paintnet,
     iconBgColor: "#C0392B",
     extLinks: [
@@ -100,10 +96,9 @@ const links = [
     ],
   },
   {
-    title: "Paint.NET",
-    text:
-      // eslint-disable-next-line max-len
-      "Scratch is a useful programming language which focuses on teaching beginner programmers to program using an easy to learn, block based language. It includes a simple drag and drop interface and plenty of support to help you get started.",
+    title: "Scratch",
+    text: `Scratch is a useful programming language which focuses on teaching beginner programmers to program using an easy to 
+    learn, block based language. It includes a simple drag and drop interface and plenty of support to help you get started.`,
     image: LINK_ICONS.scratch,
     iconBgColor: "#E67E22",
     extLinks: [
@@ -115,9 +110,8 @@ const links = [
   },
   {
     title: "SFXR",
-    text:
-      // eslint-disable-next-line max-len
-      "This is a free tool that allows you to randomly generate 8 and 16 bit sounds for when you need basic sound effects for games or other purposes. It has a clean easy to use UI that is easy to get into.",
+    text: `This is a free tool that allows you to randomly generate 8 and 16 bit sounds for when you need basic sound effects 
+    for games or other purposes. It has a clean easy to use UI that is easy to get into.`,
     image: LINK_ICONS.sfxr,
     iconBgColor: "#F1C40F",
     extLinks: [
