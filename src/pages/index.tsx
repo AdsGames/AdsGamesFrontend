@@ -25,23 +25,23 @@ const IndexPage = () => (
 
         <Card title="Popular Games">
           <GameGrid>
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
           </GameGrid>
         </Card>
 
         <Card title="Top Rated Games">
           <GameGrid>
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
-            <GameCard title="Game Name" image={gameImage} />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
+            <GameCard title="Game Name" image={gameImage} id="butts" />
           </GameGrid>
         </Card>
       </Container>
