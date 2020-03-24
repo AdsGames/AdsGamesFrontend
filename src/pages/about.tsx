@@ -76,7 +76,6 @@ const AboutPage = () => (
         <Container>
           <Card title={title}>
             <LinkLayout>
-<<<<<<< Updated upstream
               <LinkDescription>
                 <LinkTagLayout>
                   {tags.map(tag => (
@@ -86,10 +85,6 @@ const AboutPage = () => (
                 {text}
               </LinkDescription>
               <LinkIcon color={iconBgColor} title={title} image={image} width={160} />
-=======
-              <LinkDescription>{text}</LinkDescription>
-              <LinkIcon color={iconBgColor} title={title} image={image} height={330} />
->>>>>>> Stashed changes
             </LinkLayout>
           </Card>
         </Container>
