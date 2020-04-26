@@ -26,6 +26,7 @@ export const CardTitleContainer = styled.div`
   order: 0;
   padding: 2px;
   width: 60px;
+  min-height: 120px;
 `;
 
 export const CardContent = styled.div`

@@ -23,6 +23,7 @@ const GamesPage = () => {
           query {
             games {
               name
+              shortName
               id
             }
           }
@@ -43,7 +44,7 @@ const GamesPage = () => {
           <Card title="Online">
             <GameGrid>
               {games.map(game => (
-                <GameCard key={game.id} title={game.name} image={gameImage} />
+                <GameCard key={game.id} title={game.name} image={gameImage} id={game.id} />
               ))}
             </GameGrid>
           </Card>
@@ -51,7 +52,7 @@ const GamesPage = () => {
           <Card title="Download">
             <GameGrid>
               {games.map(game => (
-                <GameCard key={game.id} title={game.name} image={gameImage} />
+                <GameCard key={game.id} title={game.name} image={gameImage} id={game.id} />
               ))}
             </GameGrid>
           </Card>
