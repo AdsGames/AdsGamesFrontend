@@ -4,14 +4,14 @@ import { StyledInput } from "./Input.style";
 
 const Button: React.FC<
   React.HTMLProps<HTMLInputElement> & { label: string }
-> = ({ label, disabled, required, onChange, value }) => (
+> = ({ label, disabled, required, value, placeholder }) => (
   <>
     <Label>{label}</Label>
     <StyledInput
       value={value}
       disabled={disabled}
       required={required}
-      onChange={onChange}
+      placeholder={placeholder}
     />
   </>
 );
