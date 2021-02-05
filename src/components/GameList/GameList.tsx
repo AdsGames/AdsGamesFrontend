@@ -1,4 +1,3 @@
-import { useQuery } from "@apollo/client";
 import React from "react";
 
 import Page from "../Page";
@@ -7,13 +6,14 @@ import Card from "../Card";
 import ContentHeader from "../ContentHeader";
 import { GameGrid } from "../GameGrid";
 
-import type { Game } from "../../models";
 import IndexLayout from "../../layouts";
-import { GET_GAMES } from "../../queries/games";
 import { ContentLoader, LoadingSpinner } from "../Loaders";
+import { useListQuery } from "../../hooks/useListQuery";
+
+import { Game } from "../../models";
 
 const GamesPage: React.FC<{ path?: string }> = () => {
-  const { loading, error, data } = useQuery<{ games: Game[] }>(GET_GAMES);
+  const { loading, data } = useListQuery<Game>(Game);
 
   return (
     <IndexLayout>
@@ -21,32 +21,28 @@ const GamesPage: React.FC<{ path?: string }> = () => {
         <ContentLoader loader={<LoadingSpinner />} loading={loading}>
           <Container>
             <ContentHeader text="Games" sticky />
-            {error && <p>Error :( </p>}
-            {typeof data !== "undefined" && (
-              <>
-                <Card title="Online">
-                  <GameGrid
-                    games={data.games.filter(
-                      (game) =>
-                        game.visible &&
-                        game.files.some((file) => file.platform === "web")
-                    )}
-                  />
-                </Card>
 
-                <Card title="Download">
-                  <GameGrid
-                    games={data.games.filter(
-                      (game) =>
-                        game.visible &&
-                        game.files.some((file) =>
-                          ["windows", "mac", "linux"].includes(file.platform)
-                        )
-                    )}
-                  />
-                </Card>
-              </>
-            )}
+            <Card title="Online">
+              <GameGrid
+                games={data.filter(
+                  (game) =>
+                    game.visible &&
+                    game.files?.some((file) => file.platform === "WEB")
+                )}
+              />
+            </Card>
+
+            <Card title="Download">
+              <GameGrid
+                games={data.filter(
+                  (game) =>
+                    game.visible &&
+                    game.files?.some((file) =>
+                      ["WINDOWS", "MAC", "LINUX"].includes(file.platform)
+                    )
+                )}
+              />
+            </Card>
           </Container>
         </ContentLoader>
       </Page>
